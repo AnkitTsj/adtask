@@ -1,0 +1,78 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f0f0f0; /* Light gray background */
+}
+
+.App-header {
+  background-color: #282c34; /* Dark header background */
+  color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.chat-container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: white; /* White chat area background */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.message-area {
+  flex-grow: 1;
+  overflow-y: auto; /* Scroll for long conversations */
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  word-wrap: break-word;
+  max-width: 70%;
+}
+
+.message.user {
+  background-color: #DCF8C6; /* Light green for user messages */
+  align-self: flex-end; /* User messages to the right */
+}
+
+.message.bot {
+  background-color: #ECECEC; /* Light gray for bot messages */
+  align-self: flex-start; /* Bot messages to the left */
+}
+
+.input-area {
+  display: flex;
+  margin-top: 15px;
+}
+
+.input-area input {
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 5px 0 0 5px;
+  border: 1px solid #ccc;
+  border-right: none;
+}
+
+.input-area button {
+  padding: 10px 15px;
+  background-color: #4CAF50; /* Green send button */
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.input-area button:hover {
+  background-color: #45a049;
+}
